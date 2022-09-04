@@ -1,0 +1,10 @@
+<h1>Index</h1>
+<hr>
+<?php
+    $num = 1;
+    foreach($this->view->dados as $key => $produto)
+    {
+        echo 'Produto ' .$num. ' : '.$produto['descricao'].' -> R$: '.$produto['preco']. '<br>';
+        $num ++;
+    }
+?>
